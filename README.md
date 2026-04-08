@@ -22,19 +22,18 @@ To run this project locally, ensure you have Python 3.10+ installed.
 
 ## Setup & Installation
 
-1. **Create and activate a virtual environment:**
+1. ## Create and activate a virtual environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows use: venv\Scripts\activate
-## Install dependencies:
-pip install -r requirements.txt
-## Environment Variables:
-Create a .env file in the root directory and add your Google Gemini API key:
-GEMINI_API_KEY=your_api_key_here
-Run the pipeline:
-python main.py
-## Future Improvements (Production Grade)
-If this were to be deployed to production, I would recommend:
-- Replacing the local HTML parser with a headless browser (e.g., Selenium/Playwright) or a dedicated scraping API to handle dynamic SPA websites.
-- Replacing the mocked simulate_crm_update function with real REST API calls (e.g., Salesforce / HubSpot endpoints).
-- Adding comprehensive Unit Tests for the JSON parsing logic.
+   source venv/bin/activate  
+2. ## Install dependencies:
+   ```bash
+    pip install -r requirements.txt
+3. ## Environment Variables:
+   Create a .env file in the root directory and add your Google Gemini API key:
+     ```ptyhon
+     GEMINI_API_KEY=insert_your_api_key_here
+
+4. ## Run the pipeline:
+   ```ptyhon
+   python main.py
